@@ -1,0 +1,37 @@
+{
+   "background": {
+      "persisten": false,
+      "scripts": [ "background.js" ]
+   },
+   "commands": {
+      "mute_tab_all": {
+         "description": "Mute/Unmute all audible tabs.",
+         "suggested_key": {
+            "default": "Alt+Shift+Comma"
+         }
+      },
+      "mute_tab_all_except_current": {
+         "description": "Mute all audible tabs except current",
+         "suggested_key": {
+            "default": "Alt+Shift+N"
+         }
+      },
+      "mute_tab_current": {
+         "description": "Mute/Unmute the selected tab",
+         "suggested_key": {
+            "default": "Alt+Shift+M"
+         }
+      }
+   },
+   "description": "Quickly mute tabs with keyboard shortcuts",
+   "icons": {
+      "128": "imgs/128.png",
+      "16": "imgs/16.png",
+      "48": "imgs/48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqTiZu+LKHcfTL9VX9fYRua7HVyvfpEZi8/F0PIndtTNcI6s8av2zSH/04eOIAaA1mgCSqd1ifcw32tjoON/UiIbKN9BmWWvoDTmoFTAcJDhQWfk90LdHsQhLytz6ZIF6WvXUC+yan2Wx4kyNk3VL3TweUkm8jVgPQ3tg4xQBNXGQx1AV0DaxDKjCs0u7GsLbITrjGEtD4Xx1N3R11fXmvaen0O0W5422iMfDhLc2+wvgCifILSEPEEcn+EZgReTcokH7yPUg7RBfyioorKOEN66XtuOC20wNC26BhgPMVTp4FcoinYhjpAonSF0Cm5/cM8YQ3rf+LVWEkkV3Ybz4LQIDAQAB",
+   "manifest_version": 2,
+   "name": "Mute Tab Shortcuts",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.2.0"
+}

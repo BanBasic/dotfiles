@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# TODO:
+# download cron
+# run this script through a cron job
+
+#acpi -b return laptop battery 
+
+BATTINFO=$(acpi -b | awk '{print $4}' | cut -d '%' -f1)
+# >> 50
+
+STATE=$(acpi -b | awk '{print $3}' | cut -d ',' -f1 )
+
+OUTPUT=$(acpi -b | awk '{print $4 " you have " $5}') 
+# >> 40%, you have 02:10:30
+
+
+# battery percentage below 10  and in discharging state
+# open a notification
+if [[ $BATTINFO < 22 && $STATE=='Discharging' ]]; then
+    notify-send "Low Battery" "$OUTPUT" 
+fi
+
+

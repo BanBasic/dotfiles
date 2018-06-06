@@ -1,0 +1,4 @@
+
+# change column order when in dual mode 
+
+:set first-page-column 1:2

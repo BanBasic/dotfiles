@@ -1,0 +1,16 @@
+### tells pc to first use all of pc ram before using swap memorary
+# less you open hard drive less more bat you save
+cat cat /proc/sys/vm/swappiness
+>> 60
+# change
+sudo -s
+echo 0 > /proc/sys/vm/swappiness
+
+>> 0
+
+
+###starts TLP
+#automatic
+sudo tlp start
+
+powertop

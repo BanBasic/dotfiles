@@ -1,0 +1,44 @@
+! do not scroll with output
+URxvt*scrollTtyOutput: false
+
+! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt*scrollWithBuffer: true
+
+! scroll back to the bottom on keypress
+URxvt*scrollTtyKeypress: tru
+
+URxvt.font: 9x15
+
+URxvt.color12: rgb:5c/5c/ff
+
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+
+URxvt.colorUL: #4682B4
+
+URxvt.perl-ext: default,url-select
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.launcher: /usr/bin/xdg-open
+URxvt.url-select.underline: trueU
+
+
+rofi.color-enabled: true
+!                  bg       border   separator
+rofi.color-window: #000000, #000000, #ffa500
+!                  bg       fg       bg-alt   hl-bg    hl-fg
+rofi.color-normal: #000000, #e0e0e0, #000000, #b6b6b6, #000000
+rofi.color-active: #ffa500, #000000, #000000, #b6b6b6, #e0e0e0
+rofi.separator-style: solid
+rofi.sidebar-mode: false
+rofi.hide-scrollbar: true
+rofi.bw: 1
+rofi.columns: 1
+rofi.padding: 10
+rofi.yoffset: 0
+rofi.fake-transparency: false
+rofi.location: 0
+rofi.width: 50
+rofi.font: ubuntu mono regular 12
+rofi.lines: 10
+rofi.fixed-num-lines: true
