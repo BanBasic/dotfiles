@@ -1,0 +1,122 @@
+!###################################
+!#   ROFI
+!###################################
+rofi.color-enabled: true
+!                  bg       border   separator
+rofi.color-window: #000000, #000000, #696969
+! yellow #ffff00 #ffa500
+! blue #009fff
+! green #00FF00
+! gray #808080
+!                  bg       fg       bg-alt   hl-bg    hl-fg
+rofi.color-normal: #000000, #e0e0e0, #000000, #b6b6b6, #000000
+rofi.color-active: #009fff, #ffffff, #000000, #b6b6b6, #e0e0e0
+rofi.separator-style: solid
+rofi.sidebar-mode: false
+rofi.hide-scrollbar: true
+rofi.bw: 1
+rofi.columns: 1
+rofi.padding: 10
+rofi.yoffset: 0
+rofi.fake-transparency: false
+rofi.location: 0
+rofi.width: 50
+!rofi.font: xos4 terminus regular 12
+rofi.font: hack 10
+rofi.lines: 12
+rofi.fixed-num-lines: true
+
+
+!###################################
+!#   URXVT
+!###################################
+
+!! Extensions
+URxvt.perl-ext-common:	default,matcher,font-size,url-select,keyboard-select
+URxvt.colorUL:		#4682B4
+!! url-select
+URxvt.keysym.M-u:	perl:url-select:select_next
+URxvt.url-select.launcher: linkhandler
+URxvt.url-select.underline: true
+!! keyboard-select:
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+!! resize-font
+!URxvt.resize-font.smaller:	C-Down
+!URxvt.resize-font.bigger:	C-Up
+URxvt.keysym.C-Up:     font-size:increase
+URxvt.keysym.C-Down:   font-size:decrease
+URxvt.keysym.C-equal:  font-size:reset
+!! Matcher
+URxvt.url-launcher:	linkhandler
+URxvt.matcher.button: 1
+
+
+URxvt.depth:                32
+URxvt.geometry:             90x30
+!URxvt.loginShell:           true
+URxvt.internalBorder:       3
+URxvt.lineSpace: 0
+URxvt.visualBell:false
+
+! Scrollbar
+URxvt.scrollStyle:    rxvt
+URxvt.scrollBar:      false
+!
+URxvt*saveLines: 12000
+!urxvt.background:     black
+urxvt.foreground:     gray
+
+urxvt*transparent: true
+urxvt*shading: 4
+!urxvt*tintColor: #000000
+urxvt*blurRadius: 5
+
+!urxvt.font: xft:xos4 Terminus :pixelsize=16
+urxvt.font: xft:Hack :pixelsize=16
+!urxvt.fontFont: xft:xos4 Terminus :pixelsize=16:weight=bold
+!urxvt.font: xft:DejaVu Sans Mono:pixelsize=13
+!urxvt.boldFont: xft:DejaVu Sans Mono:pixelsize=13:weight=bold
+!URxvt.font:     xft:bitstream vera sans mono:size=11:antialias=true
+URxvt*letterSpace: 0
+URxvt.boldFont: xft:bitstream vera sans mono:bold:size=11:antialias=true
+
+! to match gnome-terminal "Linux console" scheme
+! foreground/background
+URxvt*background: #000000
+!URxvt*foreground: #ffffff
+! black
+URxvt.color0  : #000000
+URxvt.color8  : #555555
+! red
+URxvt.color1  : #AA0000
+URxvt.color9  : #FF5555
+! green
+URxvt.color2  : #00AA00
+URxvt.color10 : #55FF55
+! yellow
+URxvt.color3  : #AA5500
+URxvt.color11 : #FFFF55
+! blue
+URxvt.color4  : #0000AA
+URxvt.color12 : #5555FF
+! magenta
+URxvt.color5  : #AA00AA
+URxvt.color13 : #FF55FF
+! cyan
+URxvt.color6  : #00AAAA
+URxvt.color14 : #55FFFF
+! white
+URxvt.color7  : #AAAAAA
+URxvt.color15 : #FFFFFF
+
+
+
+xterm*background: black
+xterm*foreground: lightgray
+
+xterm*faceName: Monospace
+xterm*faceSize: 12
+xterm*VT100.Translations: #override \
+                 Ctrl Shift <Key>V:    insert-selection(SELECT) \n\
+                 Ctrl Shift <Key>C:    copy-selection(SELECT)
+
