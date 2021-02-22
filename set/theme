@@ -1,5 +1,0 @@
-# -n tells `wal` to skip setting the wallpaper.
-#wal -i Downloads/pics/wallhaven-290969.jpg  -n	
-
-feh --randomize --bg-fil ~/Downloads/pics/
-echo dan-gold-223935.jpg

@@ -1,2 +1,0 @@
- sudo ntfs-3g /dev/sda5 ~/DATA
-# /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1

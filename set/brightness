@@ -1,4 +1,0 @@
-
-x in range(200 and 4000)
-
-echo x | sudo tee /sys/class/backlight/intel_backlight/brightness
